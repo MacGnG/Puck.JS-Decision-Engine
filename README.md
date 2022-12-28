@@ -10,7 +10,8 @@ Blue LED - Maybe
 Green LED - Yes
 
 
-## Updates by MacGnG (December 2022)
+## Updates by MacGnG
+### Updates by MacGnG -- December 2022
 **Output to Console**
 
 When the Puck.js Button is pressed a message is output to the console.
@@ -28,3 +29,7 @@ LED3 = BLUE = MAYBE
 LED OFF
 LED4 = GREEN = YES
 ```
+
+
+Original forum post @ "[https://forum.espruino.com/comments/13742978/](https://forum.espruino.com/comments/13742978/)"
+- Original GitHub "[https://github.com/Kiffee/Puck.JS-Decisi­on-Engine](https://github.com/Kiffee/Puck.JS-Decisi­on-Engine)"
