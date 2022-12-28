@@ -1,4 +1,7 @@
 const leds = [LED1, LED2, LED3];
+const colors = ["RED", "GREEN", "BLUE"];
+const answers = ["NO", "YES", "MAYBE"];
+
 let Ledon = false;
 
 function turnLightsOff() {
@@ -31,16 +34,17 @@ function turnOnLed() {
   }
   var i = getRandomIntInclusive(0,2);
   digitalWrite(leds[i],1);
+  console.log("LE" + leds[i] + " = " + colors[i] + " = " + answers[i]);
   Ledon=true;
 }
 
 setWatch(function(e){  
     if (Ledon) {
       turnLightsOff();
+      console.log("LED OFF"); 
       Ledon = false;
     }     
     else {      
         turnOnLed();
     }
   }, BTN, {repeat:true, debounce:50, edge:"rising"});
-
